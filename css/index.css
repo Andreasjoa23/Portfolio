@@ -3,9 +3,10 @@
 .introduction {
     display: flex;
     justify-content: center;
-    gap: 400px;
+    gap: 40px;
     padding: 40px;
     background-color: #e0f7fa;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .introduction-content h2 {
@@ -20,8 +21,9 @@
 }
 
 .portrait img {
-    height: 700px;
+    max-height: 700px;
     width: auto;
+    max-width: 100%; /* Make the image responsive */
 }
 
 .button {
@@ -52,13 +54,15 @@
 
 .projects-container {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     justify-content: center;
     padding-bottom: 20px;
 }
 
 .project {
-    width: 500px;
-    margin: 20px 75px;
+    width: 100%;
+    max-width: 500px; /* Make the project containers responsive */
+    margin: 20px;
     text-align: left;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -93,38 +97,52 @@
 .contact {
     display: flex;
     justify-content: center;
-    gap: 300px;
-    background-color: #ffe0b2;
-    padding: 40px;
+    align-items: center;
+    padding: 20px;
+    background-color: #e0f7fa;
+}
+
+.contact-content {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
 }
 
 .contact-content h2 {
-    font-size: 40px;
-    margin: 0 0 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
-    margin-bottom: 10px;
-    font-size: 24px;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 500px;
+    width: 100%;
     padding: 10px;
-    border: 1px solid;
-    border-radius: 15px;
-    background-color: #e6e6e6;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #dfdfdf;
+    box-sizing: border-box;
 }
 
-.contact-image img {
-    height: 600px;
-    width: 500px;
-    margin-top: 10px;
+textarea {
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .introduction {
+        gap: 20px;
+    }
 }
