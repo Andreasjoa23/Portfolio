@@ -1,0 +1,130 @@
+@import url(/css/style.css);
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    padding: 40px;
+    background-color: #e0f7fa;
+}
+
+.introduction-content h2 {
+    font-size: 40px;
+    max-width: 700px;
+}
+
+.introduction-content p {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.portrait img {
+    height: 700px;
+    width: auto;
+}
+
+.button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #0158b5;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0f6fd5;
+}
+
+.earlier-projects {
+    text-align: center;
+    background-color: #e0f2f1;
+    padding-top: 40px;
+}
+
+.earlier-projects h2 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.project {
+    width: 500px;
+    margin: 20px 75px;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.project h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project p {
+    text-align: center;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.project a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    background-color: #ffe0b2;
+    padding: 40px;
+}
+
+.contact-content h2 {
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+}
+
+.contact-image img {
+    height: 600px;
+    width: 500px;
+    margin-top: 10px;
+}
