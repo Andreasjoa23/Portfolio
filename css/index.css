@@ -17,7 +17,7 @@
 .introduction-content p {
     font-size: 22px;
     line-height: 1.6;
-    max-width: 700px;
+    max-width: 900px;
 }
 
 .portrait img {
@@ -26,7 +26,7 @@
     max-width: 100%;
 }
 
-.button {
+.button, .repo-button {
     font-size: 20px;
     padding: 10px 20px;
     background-color: #0158b5;
@@ -54,7 +54,7 @@
 
 .projects-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 20px;
 }
@@ -69,6 +69,9 @@
     padding: 5px;
     background-color: #f9f9f9;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .project h3 {
@@ -87,11 +90,6 @@
     text-align: center;
     font-size: 30px;
     margin: 15px;
-}
-
-.project a {
-    color: #000000;
-    text-decoration: none;
 }
 
 .contact {
@@ -135,14 +133,4 @@ textarea {
     border: 1px solid #ccc;
     background-color: #dfdfdf;
     box-sizing: border-box;
-}
-
-textarea {
-    resize: vertical;
-}
-
-@media (max-width: 768px) {
-    .introduction {
-        gap: 20px;
-    }
 }
