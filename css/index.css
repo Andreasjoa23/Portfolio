@@ -6,7 +6,7 @@
     gap: 40px;
     padding: 40px;
     background-color: #e0f7fa;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .introduction-content h2 {
@@ -23,7 +23,7 @@
 .portrait img {
     max-height: 700px;
     width: auto;
-    max-width: 100%; /* Make the image responsive */
+    max-width: 100%;
 }
 
 .button {
@@ -54,14 +54,14 @@
 
 .projects-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; 
     justify-content: center;
     padding-bottom: 20px;
 }
 
 .project {
     width: 100%;
-    max-width: 500px; /* Make the project containers responsive */
+    max-width: 500px;
     margin: 20px;
     text-align: left;
     border: 1px solid #ccc;
